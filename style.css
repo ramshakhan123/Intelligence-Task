@@ -4,11 +4,14 @@ h1 {
 
 }
 
-input {
-    display: block;
+.test {
     position: relative;
     left: 30%;
-    top: 97px;
+    top: 80px;
+}
+
+input {
+    display: block;
     width: 40%;
     height: 100px;
     outline: none;
@@ -19,16 +22,16 @@ input {
     border-radius: 10px;
 }
 
+
 button {
-    position: absolute;
-    top: 54%;
-    left: 40%;
     padding: 20px 30px;
     font-size: 1rem;
     background-color: wheat;
     border-radius: 17px;
     border: none;
     outline: none;
+    margin-top: 4%;
+    margin-left: 10%;
 }
 
 button:hover {
@@ -36,11 +39,53 @@ button:hover {
 }
 
 p {
-    position: absolute;
-    top: 66%;
-    left: 40%;
-    text-align: center;
     font-size: 1.5rem;
     font-style: oblique;
     text-decoration: underline;
+    margin-left: 14%;
+    margin-top: 20px;
 }
+
+@media (max-width:600px) {
+    .test {
+        position: relative;
+        top: 60px;
+        left: 0;
+    }
+    input {
+    width: -webkit-fill-available;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    button {
+        margin-left: 21%;
+    }
+}
+
+@media (max-width:320px) {
+    button {
+        margin-left: 14%;
+    }
+}
+
+@media (max-width:375px ) {
+    button {
+        margin-left: 17%;
+    }
+}
+
+
+/*@media (min-width:700px) {
+    .test {
+        left: 20%;
+    }
+    input {
+        width: 61%;
+    height: 175px;
+    }
+    button {
+        margin-left: 60px;
+    padding: 40px 70px;
+    font-size: 2rem;
+    }
+}*/
